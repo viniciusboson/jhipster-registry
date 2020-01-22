@@ -46,9 +46,9 @@ spring:
     ansi:
       console-available: true
 
-logging:
+logging: #CUSTOM CONFIG
   file:
-    name: target/jhipster-registry.log
+    name: ${user.home}/tmp/logs/${spring.application.name}/spring.log
 
 ribbon:
   eureka:
